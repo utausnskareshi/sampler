@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f0f12" />
+    <meta name="description" content="iPhone / Android / PC のブラウザでオフライン動作する音楽サンプラー PWA。録音・スライス・シーケンサー・エフェクトまで搭載。" />
+    <link rel="icon" href="/sampler/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/sampler/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/sampler/manifest.webmanifest" />
+    <title>Sampler — オフラインで動く音楽サンプラー</title>
+    <link rel="stylesheet" href="/src/styles/landing.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="logo" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <h1>Sampler</h1>
+        <p class="lead">
+          ブラウザだけで動く、<strong>オフライン対応</strong>の音楽サンプラー。<br />
+          スマートフォンの<strong>ホーム画面に追加</strong>すれば、ネイティブアプリのように使えます。
+        </p>
+        <a class="cta" href="/sampler/app/">アプリを起動する →</a>
+        <p class="hint">初回起動時はオンラインでアクセスしてください。以後はオフラインで起動できます。</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="install">
+        <h2>📲 ホーム画面に追加 (PWA インストール)</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>iPhone (Safari)</h3>
+            <ol>
+              <li>このページを <strong>Safari</strong> で開きます (Chrome では不可)。</li>
+              <li>画面下部 (または右上) の <strong>共有ボタン</strong> <span class="kbd">⬆︎</span> をタップ。</li>
+              <li>メニューから <strong>「ホーム画面に追加」</strong> を選びます。</li>
+              <li>右上の <strong>「追加」</strong> をタップ。</li>
+              <li>ホーム画面の <strong>Sampler</strong> アイコンから起動できます。</li>
+            </ol>
+            <p class="note">※ iOS の仕様上、初回起動時にマイクの利用許可が求められます。</p>
+          </article>
+
+          <article class="card">
+            <h3>Android (Chrome)</h3>
+            <ol>
+              <li>このページを <strong>Chrome</strong> で開きます。</li>
+              <li>右上の <strong>⋮ メニュー</strong> をタップ。</li>
+              <li><strong>「アプリをインストール」</strong> または <strong>「ホーム画面に追加」</strong> を選択。</li>
+              <li>表示される確認ダイアログで <strong>「インストール」</strong>。</li>
+              <li>アプリ一覧の <strong>Sampler</strong> から起動できます。</li>
+            </ol>
+            <p class="note">※ 一部の Android ブラウザでは画面下部にインストールバナーが表示されます。</p>
+          </article>
+
+          <article class="card">
+            <h3>PC (Chrome / Edge)</h3>
+            <ol>
+              <li>アドレスバー右端の <strong>インストールアイコン</strong> をクリック。</li>
+              <li>または ⋮ メニュー → <strong>「Sampler をインストール」</strong>。</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2>✨ 主な機能</h2>
+        <ul class="feature-list">
+          <li>🎙 録音 / オーディオファイル取り込み</li>
+          <li>🎹 4×4 パッド + クロマチック・ピッチ演奏</li>
+          <li>✂ トリム / スライス / ループ</li>
+          <li>🌊 リバーブ / フィルター / ディレイ</li>
+          <li>🥁 16 ステップ・シーケンサー (BPM / スイング)</li>
+          <li>🔊 ノーマライズ</li>
+          <li>🪓 自動チョップ (オンセット検出)</li>
+          <li>♻ リサンプリング (FX 込み)</li>
+          <li>⏱ タイムストレッチ (ピッチ独立)</li>
+          <li>⏪ スキップバック (30 秒遡り録音)</li>
+          <li>👆 ベロシティ感度</li>
+          <li>🎛 Web MIDI 対応</li>
+          <li>📤 WAV エクスポート / プロジェクト保存</li>
+          <li>📚 チュートリアルモード</li>
+          <li>🐦 動物の鳴き声 / 雨 / 波 / 雷など環境音も標準同梱</li>
+        </ul>
+      </section>
+
+      <section id="usage">
+        <h2>🎛 操作の流れ</h2>
+        <ol class="steps">
+          <li>
+            <h3>1. 音を選ぶ / 録音する</h3>
+            <p>左の<strong>「ライブラリ」</strong>から内蔵音源を選び、パッドへドラッグ。<br />
+            または <strong>🎙 録音</strong>ボタンでマイクから録音、<strong>📁 取り込み</strong>でファイルを読み込み。</p>
+          </li>
+          <li>
+            <h3>2. 演奏する</h3>
+            <p>パッドをタップ / クリック。<strong>強さ</strong>で音量とニュアンスが変化します (ベロシティ)。<br />
+            <strong>キーボード</strong>では <kbd>1</kbd>〜<kbd>4</kbd>, <kbd>Q</kbd>〜<kbd>R</kbd>, <kbd>A</kbd>〜<kbd>F</kbd>, <kbd>Z</kbd>〜<kbd>V</kbd> がパッドに対応。</p>
+          </li>
+          <li>
+            <h3>3. 加工する</h3>
+            <p>パッドを長押しで<strong>編集モード</strong>に。波形上で範囲選択 → <strong>トリム / ノーマライズ / スライス</strong>。<br />
+            <strong>FX</strong> パネルでリバーブ・フィルター・ディレイ・タイムストレッチ。</p>
+          </li>
+          <li>
+            <h3>4. シーケンスを組む</h3>
+            <p>下部の<strong>16 ステップ</strong>を点灯させてリズムを打ち込み。BPM・スイングは右上で調整。<br />
+            ▶︎ で再生、●REC でリアルタイム録音。</p>
+          </li>
+          <li>
+            <h3>5. 書き出す</h3>
+            <p><strong>📥 エクスポート</strong>から WAV を保存、または<strong>共有</strong>から SNS へ。<br />
+            プロジェクト全体は <strong>💾 保存</strong> でローカル保存できます。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="shortcuts">
+        <h2>⌨ キーボードショートカット</h2>
+        <table>
+          <tbody>
+            <tr><th>パッド演奏</th><td><kbd>1</kbd>〜<kbd>4</kbd>, <kbd>Q</kbd>〜<kbd>R</kbd>, <kbd>A</kbd>〜<kbd>F</kbd>, <kbd>Z</kbd>〜<kbd>V</kbd></td></tr>
+            <tr><th>再生 / 停止</th><td><kbd>Space</kbd></td></tr>
+            <tr><th>録音 (シーケンス)</th><td><kbd>R</kbd></td></tr>
+            <tr><th>スキップバック保存</th><td><kbd>B</kbd></td></tr>
+            <tr><th>アンドゥ / リドゥ</th><td><kbd>Ctrl/⌘ + Z</kbd> / <kbd>Ctrl/⌘ + Shift + Z</kbd></td></tr>
+            <tr><th>タップテンポ</th><td><kbd>T</kbd></td></tr>
+            <tr><th>メトロノーム</th><td><kbd>M</kbd></td></tr>
+            <tr><th>テーマ切替</th><td><kbd>Shift + D</kbd></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="tips">
+        <h2>💡 困ったときは</h2>
+        <ul>
+          <li>音が出ない場合は、画面を一度タップしてください (iOS の制約により初回タップで音声出力が解放されます)。</li>
+          <li>マイクが使えない場合は、ブラウザの設定でマイク権限を許可してください。</li>
+          <li>オフライン化が完了するまで初回は通信が必要です。完了後は機内モードでも動作します。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Sampler · Open source on <a href="https://github.com/utausnskareshi/sampler">GitHub</a></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/landing.ts"></script>
+  </body>
+</html>
